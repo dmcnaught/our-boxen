@@ -1,6 +1,7 @@
 require boxen::environment
 require homebrew
 require gcc
+include brewcask
 
 Exec {
   group       => 'staff',
@@ -75,7 +76,26 @@ node default {
   ruby::version { '2.1.1': }
   ruby::version { '2.1.2': }
 
-  # common, useful packages
+  #My custom
+
+  package {
+    [
+      "google-chrome",
+      "iterm2"
+    ]: provider => 'brewcask'
+  }
+
+  package {
+    [
+      "ssh-copy-id",
+    ]: ensure => latest,
+       provider => homebrew
+  }
+
+  # Include Java 7 with JCE Unlimited Strength
+  include java
+
+# common, useful packages
   package {
     [
       'ack',
