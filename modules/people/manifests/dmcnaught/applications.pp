@@ -7,7 +7,6 @@ class people::dmcnaught::applications {
       'gpgtools',
       'macvim',
       'skype',
-      'virtualbox',
       'vlc',
     ]: provider => 'brewcask'
   }
