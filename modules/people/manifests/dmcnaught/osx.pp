@@ -8,7 +8,7 @@ class people::dmcnaught::osx {
   include osx::finder::show_all_filename_extensions
 
   osx::recovery_message {
-    'If this Mac is found, please call Duncan @ +1 720 240 6575': 
+    'If this Mac is found, please call Duncan @ +1 720 240 6575':
   }
 
   boxen::osx_defaults { 'Display path bar in Finder Window':
@@ -70,7 +70,7 @@ class people::dmcnaught::osx {
     domain => 'Apple Global Domain',
     key    => 'com.apple.swipescrolldirection',
     type   => 'boolean',
-    value  => 'false',
+    value  => false,
     user   => $::boxen_user,
   }
 
@@ -79,25 +79,25 @@ class people::dmcnaught::osx {
     domain => 'com.apple.dock',
     key    => 'showAppExposeGestureEnabled',
     type   => 'boolean',
-    value  => 'true',
+    value  => true,
     user   => $::boxen_user,
   }
 
   osx::dock::hot_corner { 'Desktop':
     position => 'Top Left',
-    action => 'Desktop'
+    action   => 'Desktop'
   }
   osx::dock::hot_corner { 'Screen Saver':
     position => 'Bottom Left',
-    action => 'Start Screen Saver'
+    action   => 'Start Screen Saver'
   }
   osx::dock::hot_corner { 'Dashboard':
     position => 'Top Right',
-    action => 'Dashboard'
+    action   => 'Dashboard'
   }
   osx::dock::hot_corner { 'Display Sleep':
     position => 'Bottom Right',
-    action => 'Put Display to Sleep'
+    action   => 'Put Display to Sleep'
   }
 
 
