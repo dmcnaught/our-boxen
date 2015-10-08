@@ -57,7 +57,7 @@ node default {
   include dnsmasq
   include git
   include hub
-  #include nginx
+  #include nginx - commenting out as El Capitan has "./configure: error: SSL modules require the OpenSSL library."
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
@@ -80,16 +80,16 @@ node default {
 
   package {
     [
-      "google-chrome",
-      "iterm2"
+      'google-chrome',
+      'iterm2'
     ]: provider => 'brewcask'
   }
 
   package {
     [
-      "ssh-copy-id",
-    ]: ensure => latest,
-       provider => homebrew
+      'ssh-copy-id',
+    ]: ensure  => latest,
+      provider => homebrew
   }
 
   # Include Java 7 with JCE Unlimited Strength
