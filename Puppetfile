@@ -60,8 +60,9 @@ github "xquartz",     "1.2.1"
 
 # Optional/custom modules. There are tons available at
 # https://github.com/boxen.
-github "osx",             "2.8.0"
 github "java",            "1.8.4"
+github "osx",             "2.8.0"
+github "vagrant",         "3.3.3"
 # github "elasticsearch", "2.8.0"
 # github "mysql",         "2.0.1"
 # github "postgresql",  "4.0.1"

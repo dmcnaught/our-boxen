@@ -20,5 +20,5 @@ class people::dmcnaught::applications {
       'wget',
     ]: provider => 'homebrew'
   }
-
+  class {'vagrant': }
 }
