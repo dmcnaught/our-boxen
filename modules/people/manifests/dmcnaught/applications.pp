@@ -14,6 +14,7 @@ class people::dmcnaught::applications {
     [
       'awscli',
       'deis',
+      'deisctl',
       'rbenv',
       'ruby',
       'ruby-build',
