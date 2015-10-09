@@ -13,6 +13,7 @@ class people::dmcnaught::applications {
   package {
     [
       'awscli',
+      'deis',
       'rbenv',
       'ruby',
       'ruby-build',
