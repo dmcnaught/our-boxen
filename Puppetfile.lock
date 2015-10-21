@@ -51,7 +51,7 @@ GITHUBTARBALL
 GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
-    nginx (1.4.6)
+    nginx (1.6.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-nodejs
@@ -131,7 +131,7 @@ DEPENDENCIES
   inifile (= 1.4.1)
   java (= 1.8.4)
   module_data (= 0.0.4)
-  nginx (= 1.4.6)
+  nginx (= 1.6.0)
   nodejs (= 5.0.0)
   openssl (= 1.0.0)
   osx (= 2.8.0)

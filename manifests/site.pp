@@ -57,7 +57,7 @@ node default {
   include dnsmasq
   include git
   include hub
-  #include nginx - commenting out as El Capitan has "./configure: error: SSL modules require the OpenSSL library."
+  include nginx
 
   # fail if FDE is not enabled
   if $::root_encrypted == 'no' {
