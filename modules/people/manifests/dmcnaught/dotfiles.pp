@@ -5,7 +5,7 @@ class people::dmcnaught::dotfiles {
   $dotfiles_dir = "${boxen::config::srcdir}/dotfiles"
 
   repository { $dotfiles_dir:
-    source => "${::boxen_user}/dotfiles"
+    source => "dmcnaught/dotfiles"
   }
 
   exec { 'install dotfiles':
