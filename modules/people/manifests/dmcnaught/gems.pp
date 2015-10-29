@@ -1,7 +1,7 @@
 #dmcnaught gems
 class people::dmcnaught::gems {
 
-  $version = '2.1.0'
+  $version = '2.1.7'
 
   ruby_gem { 'puppet-lint':
     gem          => 'puppet-lint',
