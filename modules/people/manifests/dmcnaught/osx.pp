@@ -91,9 +91,9 @@ class people::dmcnaught::osx {
     position => 'Bottom Left',
     action   => 'Start Screen Saver'
   }
-  osx::dock::hot_corner { 'Dashboard':
+  osx::dock::hot_corner { 'Notification Center':
     position => 'Top Right',
-    action   => 'Dashboard'
+    action   => 'Notification Center'
   }
   osx::dock::hot_corner { 'Display Sleep':
     position => 'Bottom Right',
