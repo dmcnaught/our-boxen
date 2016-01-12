@@ -20,4 +20,7 @@ class people::dmcnaught::config {
     source => 'rodjek/vim-puppet',
   }
 
+  repository { "${home}/.vim/bundle/vim-ansible-yaml":
+    source => 'chase/vim-ansible-yaml',
+  }
 }
