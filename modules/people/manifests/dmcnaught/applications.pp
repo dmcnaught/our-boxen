@@ -13,7 +13,6 @@ class people::dmcnaught::applications {
   }
   package {
     [
-      'ansible',
       'awscli',
       'deis',
       'deisctl',
