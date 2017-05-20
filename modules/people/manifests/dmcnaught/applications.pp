@@ -6,7 +6,6 @@ class people::dmcnaught::applications {
       'alfred',
       'gpgtools',
       'macvim',
-      'macdown',
       'skype',
       'vlc',
     ]: provider => 'brewcask'
@@ -23,5 +22,4 @@ class people::dmcnaught::applications {
       'wget',
     ]: provider => 'homebrew'
   }
-  class {'vagrant': }
 }
